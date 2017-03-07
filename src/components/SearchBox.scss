@@ -1,0 +1,27 @@
+.search-box {
+  background-color: #FFE600;
+
+  .brand-image {
+    width: 53px;
+    height: 36px;
+    display: inline-block;
+    @include text-hide;
+    @include img-retina('../assets/Logo_ML.png', '../assets/Logo_ML@2x.png', 53px, 36px);
+  }
+
+  .search-image {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    @include text-hide;
+    @include img-retina('../assets/ic_Search.png', '../assets/ic_Search@2x.png', 18px, 18px);
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .form-inline {
+    margin-bottom: 0;
+  }
+}

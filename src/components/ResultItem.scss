@@ -1,0 +1,51 @@
+.result-item {
+
+  + .result-item {
+    .result-item-inner {
+      border-top: 1px solid #eee;
+    }
+  }
+
+  a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .result-item-inner {
+    padding: $grid-gutter-width-base / 2 0;
+    margin: 0 $grid-gutter-width-base / 2;
+  }
+
+  img {
+    border-radius: 4px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .free-shipping-image {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -18px;
+    left: 8px;
+    display: inline-block;
+    @include text-hide;
+    @include img-retina('../assets/ic_shipping.png', '../assets/ic_shipping@2x.png', 18px, 18px);
+  }
+
+  .title {
+    font-size: 18px;
+    margin-top: $grid-gutter-width-base - 18px;
+  }
+
+  .location {
+    font-size: 12px;
+  }
+
+}
