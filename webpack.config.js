@@ -30,7 +30,7 @@ const config = {
     }, {
       test: /\.scss$/,
       loader: extractSass.extract({
-        loader: [ {
+        use: [ {
           loader: 'css-loader',
         }, {
           loader: 'sass-loader',
